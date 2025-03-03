@@ -31,6 +31,12 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="images/Midwest Logo Trnsprt little.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!--Scripts for .html-->
+  <script>
+  if (window.location.pathname.endsWith(".html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+  }
+</script>
 
 </head>
 
