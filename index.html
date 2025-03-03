@@ -7,12 +7,6 @@
   <title>Marinduque Midwest College</title>
   <link rel="icon" href=" type="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!--Scripts for .html-->
-  <script>
-  if (window.location.pathname.endsWith(".html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-  }
-</script>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,6 +32,12 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="images/Midwest Logo Trnsprt little.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <script>
+    if (window.location.pathname.endsWith(".html")) {
+      window.history.replaceState(null, "", window.location.pathname.repeat(".html", ""));
+    }
+  </script>
 
 </head>
 
@@ -68,6 +68,7 @@
           aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
             <li class="nav-item  active">
@@ -190,7 +191,7 @@
         <a href="about-us.html" class="btn btn-primary-outline">See more</a>
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="images/about-us.jpg"> 
+        <img class="img-fluid w-100" src="images/about-us/about-us.jpg">
       </div>
     </div>
   </div>
@@ -277,10 +278,10 @@
 <script src="plugins/mixitup/mixitup.min.js"></script>
 <!-- google map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-<script src="plugins/google-maps /gmap.js"></script> 
+<script src="plugins/google-map/gmap.js"></script>
 
 <!-- Main Script -->
-<script src="https://github.com/Zaeyyyy/MMC-website/blob/main/js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
