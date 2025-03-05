@@ -164,8 +164,8 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #ffbc3b;
-  color: #fff;
+  background: blueviolet;
+  color: gold;
 }
 
 .btn-primary::before {
@@ -332,6 +332,7 @@ a h4:hover {
 .section {
   padding-top: 90px;
   padding-bottom: 90px;
+  box-shadow: 0 2px 50px rgba(0, 0, 0.1);
 }
 
 .section-sm {
@@ -725,7 +726,7 @@ link:focus,
 }
 
 .navbar .dropdown-item:hover {
-  color: #ffbc3b;
+  color: blueviolet;
   background: transparent;
 }
 
@@ -808,6 +809,7 @@ link:focus,
   padding-left: 70px;
   padding-top: 80px;
   padding-right: 30%;
+  box-shadow: 0 2px 7px rgba(0, 0, 0.1);
 }
 
 @media (max-width: 1400px) {

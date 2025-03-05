@@ -26,17 +26,17 @@
   <link rel="stylesheet" href="plugins/venobox/venobox.css">
 
   <!-- Main Stylesheet -->
-  <link href="css/progoffer.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   
   <!--Favicon-->
   <link rel="shortcut icon" href="images/Midwest Logo Trnsprt little.png" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <!--Scripts for .html-->
+
   <script>
-  if (window.location.pathname.endsWith(".html")) {
-    window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-  }
-</script>
+    if (window.location.pathname.endsWith(".html")) {
+      window.history.replaceState(null, "", window.location.pathname.repeat(".html", ""));
+    }
+  </script>
 
 </head>
 
@@ -83,7 +83,7 @@
               <a class="nav-link" href="admission.html">Admission</a>
             </li>
             <li class="nav-item @@Scholarship">
-              <a class="nav-link" href="#">Scholarship</a>
+              <a class="nav-link" href="scholarship.html">Scholarship</a>
             </li>
             <li class="nav-item dropdown view                                                                                                                                                                                                                                                                                                                                               ">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -91,7 +91,7 @@
                 What's New
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Latest Announcement</a>
+                <a class="dropdown-item" href="announcement.html">Announcement</a>
                 <a class="dropdown-item" href="#">Coming soon</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Upcoming Events</a> 
@@ -111,7 +111,7 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="#">Program Offering</a></li>
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="programoffer.html">Program Offering</a></li>
           <li class="list-inline-item text-white h3 font-secondary "></li>
         </ul>
         <p class="text-lighten"></p>
@@ -122,167 +122,69 @@
 <!-- /page title -->
 
 <!-- courses -->
-<section class="section">
-  <div class="container">
-    <!-- course list -->
-<div class="row justify-content-center">
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/jh_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-        </ul>
-        <a href="#">
-          <h4 class="card-title">Junior High School</h4>
-        </a>
-        <p class="card-text mb-4" style="padding-bottom: 9.7%;"> We are offering Junior High School study.</p>
-        <br>
-        <a href="?p=480902373957c09af45341c89a023486" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+<section class="program-offering " style="width: 50%;">
+  <div class="program-card">
+    <img src="images/courses/jh_bg.jpg" alt="JH" class="program-image">
+    <h5></h5>
+    <h3 class="program-title">Junior High School</h3>
+    <p class="program-description">We are offering Junior High School Study</p>
+    <a href="jhs.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/humss_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">Academic Track</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">Senior High School</h4>
-        </a>
-        <p class="card-text mb-5" style="padding-bottom: 2%;"> Humanities and Social Sciences (HUMSS)</p>
-        <a href="?p=d566635706a229c5db9de522e46bc32f" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/humss_bg.jpg" alt="SHS" class="program-image">
+    <h5>Academic Track</h5>
+    <h3 class="program-title">Senior High School - HUMSS</h3>
+    <p class="program-description">Humanities and Social Sciences</p>
+    <a href="humss.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-   <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/stem_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">Academic Track</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">Senior High School</h4>
-        </a>
-        <p class="card-text mb-4"> Science, Technology, Engineering and Mathematics (STEM)</p>
-        <a href="?p=21cef1c00596a9e5d7d4d6d65b9c86b2" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/stem_bg.jpg" alt="SHS" class="program-image">
+    <h5>Academic Track</h5>
+    <h3 class="program-title">Senior High School - STEM</h3>
+    <p class="program-description">Science, Technology, Engineering and Mathematics</p>
+    <a href="stem.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-     <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/abm_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">Academic Track</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">Senior High School</h4>
-        </a>
-        <p class="card-text mb-5" style="padding-bottom: 10.2%;"> Accountancy, Business and Management (ABM)</p>
-            <a href="?p=a4d93a606d8b6a233518e2a8f23050ed" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/abm_bg.jpg" alt="SHS" class="program-image">
+    <h5>Academic Track</h5>
+    <h3 class="program-title">Senior High School - ABM</h3>
+    <p class="program-description">Accountacy, Business and Management</p>
+    <a href="abm.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/ict_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">Technical – Vocational Livelihood Track</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">Senior High School</h4>
-        </a>
-        <p class="card-text mb-4"> Information and Communications Technology (ICT) - Computer Programming and Computer Systems Servicing</p>
-        <a href="?p=76da1f52c75402020a895a95cf60bbfe" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/ict_bg.jpg" alt="SHS" class="program-image">
+    <h5>TVL Track</h5>
+    <h3 class="program-title">Senior High School - ICT</h3>
+    <p class="program-description">Informations and Communications Technology(ICT) - Computer Programming and Computer Systems Servicing</p>
+    <a href="ict.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/he_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">Technical – Vocational Livelihood Track</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">Senior High School</h4>
-        </a>
-        <p class="card-text mb-5">Home Economics (HE) - Food and Beverage Services, Commercial Cooking and Bartending</p>
-        <a href="?p=68d74268bc4cc72b8827d0987fdd1a44" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/he_bg.jpg" alt="SHS" class="program-image">
+    <h5>TVL Track</h5>
+    <h3 class="program-title">Senior High School - HE</h3>
+    <p class="program-description">Home Economics(HE) - Food and Beverages Services, Commercial Cooking and Bartending</p>
+    <a href="he.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-   <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/beed_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">BEEd</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">College Department</h4>
-        </a>
-        <p class="card-text mb-4">Bachelor of Elementary Education (BEEd)</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <a href="?p=38003c9040db454fed7008f93c216a5a" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/beed_bg.jpg" alt="College" class="program-image">
+    <h5>BEEd</h5>
+    <h3 class="program-title">College Department - BEEd</h3>
+    <p class="program-description">Bachelor of Elementary Education</p>
+    <a href="beed.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-
-     <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/bscs_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">BSCS</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">College Department</h4>
-        </a>
-        <p class="card-text mb-4" style="padding-bottom: 2%;">Bachelor of Science in Computer Science (BSCS)</p>
-        <br>
-        <br>
-        <a href="?p=a46f8bbfa258d70d3529bb09fe9c666e" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
+  <div class="program-card">
+    <img src="images/courses/bscs_bg.jpg" alt="College" class="program-image">
+    <h5>BSCS</h5>
+    <h3 class="program-title">College Department - BSCS</h3>
+    <p class="program-description">Bachelor of Science in Computer Science</p>
+    <a href="bscs.html" class="btn btn-primary btn-sm">See more</a>
   </div>
-    <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/bseenglish_bg.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="text-color" href="#">BSED-English</a></li>
-        </ul>
-        <a href="#">
-          <h4 class="card-title">College Department</h4>
-        </a>
-        <p class="card-text mb-4" style="padding-bottom: 2%;">Bachelor of Secondary Education Major in English (BSED-English)</p>
-        <br>
-        <br>
-        <a href="?p=16e099a8a956f1f0750365c1d53e75ff" class="btn btn-primary btn-sm">See more</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
- 
-</div>
-<!-- /course list -->
+  <div class="program-card">
+    <img src="images/courses/bseenglish_bg.jpg" alt="College" class="program-image">
+    <h5>BSED - English</h5>
+    <h3 class="program-title">College Department - BSED</h3>
+    <p class="program-description">Bachelor of Secondary Education Major in English</p>
+    <a href="bsed.html" class="btn btn-primary btn-sm">See more</a>
   </div>
 </section>
 <!-- /courses -->
@@ -295,22 +197,20 @@
           <!-- logo -->
           <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="images/Midwest Logo Trnsprt little.png" alt="MMC"></a>
           <ul class="list-unstyled">
-            <li class="mb-2">Brgy, Dili, Gasan, Marinduque</li>
-            <li class="mb-2">Tel #: (042) 704-0131</li>
-            <li class="mb-2">Fax #:(042)- 342-1014 </li>
-            <li class="mb-2">Talk N Text: 0938-253-0201</li>
-            <li class="mb-2">Globe: 0917-144-8363 </li>
+            <li class="mb-2"><b>Brgy, Dili, Gasan, Marinduque</b></li>
+            <li class="mb-2"><b>Smart: 0928-505-9397</b></li>
+            <li class="mb-2"><b>Globe: 0917-144-8363</b></li>
           </ul>
         </div>
         <!-- company -->
         <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">COURSES</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="?p=0dfcce752715c464ccdae8b2acc9e348">Bachelor of Elementary Education</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=0dfcce752715c464ccdae8b2acc9e348">Bachelor of  Secondary Education Major in English</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=0dfcce752715c464ccdae8b2acc9e348">Bachelor of Science in Computer Science</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=0dfcce752715c464ccdae8b2acc9e348">Senior High School / Strands (ICT, HUMSS, STEM, ABM, HE)</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=0dfcce752715c464ccdae8b2acc9e348">Junior High School</a></li>
+            <li class="mb-3"><a class="text-color" href="programoffer.html"><b>Bachelor of Elementary Education</b></a></li>
+            <li class="mb-3"><a class="text-color" href="programoffer.html"><b>Bachelor of  Secondary Education Major in English</b></a></li>
+            <li class="mb-3"><a class="text-color" href="programoffer.html"><b>Bachelor of Science in Computer Science</b></a></li>
+            <li class="mb-3"><a class="text-color" href="programoffer.html"><b>Senior High School / Strands (ICT, HUMSS, STEM, ABM, HE)</b></a></li>
+            <li class="mb-3"><a class="text-color" href="programoffer.html"><b>Junior High School</b></a></li>
 
 
           </ul>
@@ -319,12 +219,12 @@
         <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">LINKS</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color" href="?p=46b3931b9959c927df4fc65fdee94b07">About Us</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=1253208465b1efa876f982d8a9e73eef">Staff Directory</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=0dfcce752715c464ccdae8b2acc9e348">Program Offering</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=281edb7c3cf81e3b67aaa09df4e313f5">Admission Requirements</a></li>
-             <li class="mb-3"><a class="text-color" href="?p=a45d16750817ed2d199e1b1b579eae4e">Enrollment Procedure</a></li>
-            <li class="mb-3"><a class="text-color" href="?p=781a230020f8bf9b616608856f66d08f">Tuition Fee and Scholarship</a></li>
+            <li class="mb-3"><a class="text-color" href="index.html"><b>About Us</b></a></li>
+            <li class="mb-3"><a class="text-color" href="staff.html"><b>Staff Directory</b></a></li>
+            <li class="mb-3"><a class="text-color" href="programoffer.html"><b>Program Offering</b></a></li>
+            <li class="mb-3"><a class="text-color" href="admission.html"><b>Admission Requirements</b></a></li>
+             <li class="mb-3"><a class="text-color" href="?p=a45d16750817ed2d199e1b1b579eae4e"><b>Enrollment Procedure</b></a></li>
+            <li class="mb-3"><a class="text-color" href="?p=781a230020f8bf9b616608856f66d08f"><b>Tuition Fee and Scholarship</b></a></li>
           </ul>
         </div>
         <!-- support -->
@@ -346,10 +246,7 @@
         </div>
         <div class="col-sm-5 text-sm-right text-center">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" href="https://www.facebook.com/mmc"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" href="https://www.twitter.com/mmc"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" href="#"><i class="ti-instagram text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" href="https://dribbble.com/mmc"><i class="ti-dribbble text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" target="_blank" href="https://www.facebook.com/marinduquemidwest"><i class="ti-facebook text-primary"></i></a></li>
           </ul>
         </div>
       </div>
